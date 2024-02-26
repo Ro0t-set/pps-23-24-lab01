@@ -1,24 +1,26 @@
 package tdd;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class CicularListImpl implements CircularList  {
 
+    private List<Integer> list = new ArrayList<Integer>();
+
     @Override
     public void add(int element) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'add'");
+        list.add(element);
     }
 
     @Override
     public int size() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'size'");
+        return list.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return true;
+        return list.isEmpty();
     }
 
     @Override
